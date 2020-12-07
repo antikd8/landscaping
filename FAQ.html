@@ -1,87 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Часто задаваемые вопросы</title>
-    <link rel="stylesheet" type="text/css" href="FAQ.css">
-    <link rel="shortcut icon" type="image/png" href="img/growingSeed.png">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="FAQ.css" />
+    <link rel="shortcut icon" type="image/png" href="img/growingSeed.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
     <header>
-		<div class="headerLogo">
-			<div class="Company"> <img src="img/growingSeed.png" width="40px" height="44px">
-				MYCOMPANY</div>
-		</div>
-		<nav>
-			<div class="topNav" id="myTopNav">
-                <a href="index.html">Главная</a>
-                <a href="#">Галерея</a>
-				<a href="FAQ.html">faq</a>
-				<a href="#contact">контакты</a>
-				<a href="#" id="menu" class="icon">&#9776;</a>
-			</div>
-		</nav>
-    </header>
-    
-    
-    <div class="mainFaq">
-        <div class="wrapper">
-            <h1>Часто задаваемые вопросы</h1>
-            <div class="faq">
-                <div class="faqtext">
-                    <p>В данном разделе вы можете просмотреть вопросы, которые часто 
-                        задают нам и возможно найти вопрос на интересующий вас вопрос!
-                        Если же вы не нашли ответа, то смело можете связаться с нами!
-                    </p>
-                </div>
-            </div>
+      <div class="headerLogo">
+        <div class="Company">
+          <img src="img/growingSeed.png" width="40px" height="44px" /> MYCOMPANY
         </div>
+      </div>
+      <nav>
+        <div class="topNav" id="myTopNav">
+          <a href="index.html">главная</a>
+          <a href="#faqtext" data-scroll="#faqtext">Галерея</a>
+          <a href="#">faq</a>
+          <a href="#contact" data-scroll="#contact">контакты</a>
+          <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mainFaq">
+      <div class="wrapper">
+        <h1>Часто задаваемые вопросы</h1>
+        <div class="faqtext" id="faqtext">
+          <p>
+            В данном разделе вы можете просмотреть вопросы, которые часто задают
+            нам и возможно найти вопрос на интересующий вас вопрос! Если же вы
+            не нашли ответа, то смело можете связаться с нами!
+          </p>
+        </div>
+      </div>
     </div>
-
-
 
     <div class="accordion">
-        <div class="contentBox">
-            <div class="question">вопрос ???</div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Provident qui et unde 
-                nihil ipsa voluptas amet praesentium enim 
-                laudantium dolorum deserunt magnam cupiditate 
-                officia consequuntur mollitia fuga, 
-                iure perspiciatis cum!</p>
-            </div>
+      <div class="contentBox">
+        <div class="question">Как происходит реставрация сада?</div>
+        <div class="answer1">
+          <p>
+            Реставрация вашего сада или участка будет происходить в несколько
+            этапов :
+          </p>
+          <ul>
+            <li>
+              Вы рассказываете нам о вашем текущем положении сада и описывайте,
+              каким бы хотели видеть его после реставрации.
+            </li>
+            <li>
+              Мы составляем детальный план реставрированного сада со всеми
+              деталями по вашим желаниям и предпочтениям. Если у вас есть
+              какие-то замечания, то вместе исправляем их и получаем итоговый
+              план, который и будет использоваться при реставрации.
+            </li>
+            <li>
+              Наши специалисты приезжают на точку и начинают свою работу.
+              Длительность будет зависеть от масштаба, и будет оговорена с вами
+              при обсуждении плана реставрирования.
+            </li>
+            <li>
+              По завершении работы мы сообщаем вам об этом для вашей рецензии.
+              При возникновении каких-либо ошибок или неточной мы исправим их в
+              соответствии с вашими требованиями!
+            </li>
+          </ul>
         </div>
-        <div class="contentBox">
-            <div class="question">вопрос ???</div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Provident qui et unde 
-                nihil ipsa voluptas amet praesentium enim 
-                laudantium dolorum deserunt magnam cupiditate 
-                officia consequuntur mollitia fuga, 
-                iure perspiciatis cum!</p>
-            </div>
+      </div>
+      <div class="contentBox">
+        <div class="question">Как долго вы будете рестраврировать сад?</div>
+        <div class="answer2">
+          <p>
+            Реставрация вашего участка будет зависеть от многих факторов,
+            которые мы будем обсуждать при составлении плана :
+          </p>
+          <ul>
+            <li>
+              Площадь территории, которая будет находиться под работой. При
+              меньшей площади, реставрация займет минимальное количество
+              времени.
+            </li>
+            <li>
+              Сложность проекта : зависит от поставленной задачи. Если задача
+              заключается в полном реставрировании, то это может занять около
+              5-6 рабочих дней. Если же треубется обработка газона и растений,
+              то работа не займет больше двух дней.
+            </li>
+            <li>
+              Количество нанимаемых работников. Если вам необходимо, чтобы
+              работа была завешена в кротчайшие сроки, мы можем предоставить
+              дополнительных работников, которые намного ускорят процесс
+              реставрации.
+            </li>
+          </ul>
         </div>
-        <div class="contentBox">
-            <div class="question">вопрос ???</div>
-            <div class="answer">
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Provident qui et unde 
-                nihil ipsa voluptas amet praesentium enim 
-                laudantium dolorum deserunt magnam cupiditate 
-                officia consequuntur mollitia fuga, 
-                iure perspiciatis cum!</p>
-            </div>
+      </div>
+      <div class="contentBox">
+        <div class="question">Если мне не понравится ваша работа?</div>
+        <div class="answer3">
+          <p>
+            Если вам не понравится то, что мы сделали то есть несколько
+            дальнейших путей развития событий :
+          </p>
+          <ul>
+            <li>
+              Мы составляем с вами новый план, учитывая прошлый опыт и ошибки.
+              По новому плану выполняем задание заново, чтобы вы остались
+              довольны!
+            </li>
+            <li>
+              Мы можем вернуть вам деньги и оставить задание таким, какое оно
+              сейчас. Если же вы снова захотите дать нам задание мы с радостью
+              примем его и постараемся выполнить его на 100%!
+            </li>
+          </ul>
+          <div class="conclusionAnswer3">
+            В любом случае мы всегда стараемся учитывать все ваши желания и
+            интересы, чтобы вы остались довольны работой!
+          </div>
         </div>
+      </div>
+      <div class="contentBox">
+        <div class="question">Не испортят ли ваши химикаты землю?</div>
+        <div class="answer4">
+          <p>
+            Мы используем только самые лучшие химикаты со всего рынка! Наши
+            удобрения не только помогут прижиться новым видам растений, но и
+            улучшат состояние почвы в целом для будущих работ.
+          </p>
+          <p>
+            Также наша технике тщательно обрабатывается каждый раз при начале
+            работы. Это позволяет исключить риск попадания в почву вредных
+            веществ.
+          </p>
+        </div>
+      </div>
+      <div class="contentBox active">
+        <div class="question">в каком случае возможна приостановка работ?</div>
+        <div class="answer5">
+          <p>
+            Если вам требуется, чтобы мы приостановили нашу работу, мы можем это
+            сделать, но это может нежелательно сказаться на растениях. Не
+            рекомендуется прерывать комплексный уход за растениями, так как это
+            может сказаться на их здоровье. Так же работы могут быть прекращены
+            в случае слишком низких температур, или же неблагоприятных погодных
+            условий, которые отрицательно могут повлиять на состояние почвы или
+            же работы техники.
+          </p>
+        </div>
+      </div>
     </div>
 
+    <section class="mainFeedback">
+      <div class="contactWrapper">
+        <h1 id="contact"><span class="light">свяжитесь</span> с нами</h1>
+        <div class="Feedback">
+          <div id="contactsText">
+            <div class="cssload-wheel"></div>
+          </div>
+        </div>
+        <form
+          action="https://formspree.io/f/mleowaww"
+          method="POST"
+          name="newForm"
+        >
+          <div class="formInputs">
+            <div class="inputLeft">
+              <p>Ваше имя<span class="red">*</span></p>
+              <input type="text" id="name" name="customer" />
+            </div>
+            <div class="inputRight">
+              <p>Email адрес<span class="red">*</span></p>
+              <input type="email" id="email" name="customerMail" />
+            </div>
+          </div>
+          <div class="message">
+            <p>Опишите ваше задание<span class="red">*</span></p>
+            <textarea
+              name="text"
+              id="message"
+              name="CustomerMessage"
+            ></textarea>
+          </div>
+          <div class="buttonBlock">
+            <input type="submit" value="ОТПРАВИТЬ" class="button" />
+          </div>
+        </form>
+      </div>
+    </section>
 
-    
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100011046781702"
+          ><img src="img/facebook.png" alt="facebook"
+        /></a>
+        <a href="https://mobile.twitter.com/AntonDrugov8"
+          ><img src="img/twitter.png" alt="twitter"
+        /></a>
+        <a href="http://gmail.com"><img src="img/google.png" alt="google" /></a>
+        <a href="https://www.linkedin.com/in/anton-drugov-8755021b5/"
+          ><img src="img/linkedin.png" alt="linkedin"
+        /></a>
+        <a href="https://dribbble.com/antikd8"
+          ><img src="img/dribble.png" alt="dribble"
+        /></a>
+      </div>
+    </footer>
 
-       
-    <script type="text/javascript" src="FAQ.js">
-    </script>
-</body>
+    <script type="text/javascript" src="FAQ.js"></script>
+  </body>
 </html>
