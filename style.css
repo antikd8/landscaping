@@ -14,11 +14,11 @@ header {
   width: 100%;
   height: 90px;
   position: absolute;
+  z-index: 10;
 }
 
 header.fixed {
   position: fixed;
-  overflow: hidden;
 }
 
 a {
@@ -99,6 +99,54 @@ header a:after {
 a:hover:after,
 a:focus:after {
   width: 100%;
+}
+
+/* Burger menu */
+
+.burger {
+  display: none;
+  padding: 9px 2px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+  transition: 0.4s;
+
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+  transition: 0.4s;
+
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger__item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item:after {
+  width: 26px;
+  bottom: -8px;
 }
 
 main {
@@ -794,9 +842,10 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
-  .topNav a {
+  /* .topNav a {
     display: none;
     background-color: #222222;
+    font-size: 20px;
   }
 
   .topNav a.icon {
@@ -833,6 +882,53 @@ footer {
     text-align: right;
     left: 200px;
     top: 24px;
+  } */
+
+  .topNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+    background-color: #222222;
+    text-align: right;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .topNav.show {
+    display: flex;
+    width: 30%;
+  }
+
+  .topNav.show a {
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .burger.active .burger__item {
+    transform: rotate(45deg);
+    top: -0px;
+    width: 30px;
+    transition: 0.4s;
+  }
+
+  .burger.active .burger__item::before {
+    transform: rotate(90deg);
+    width: 30px;
+    top: -0px;
+    transition: 0.4s;
+  }
+
+  .burger.active .burger__item::after {
+    display: none;
+  }
+
+  /* Burger */
+  .burger {
+    display: block;
+    margin-left: 24%;
   }
 
   .headerLogo {
@@ -1022,17 +1118,26 @@ footer {
 
   textarea {
     float: left;
-    width: 50%;
+    width: 100%;
   }
 
   input {
     float: left;
-    width: 250px;
+    width: 100%;
+  }
+
+  .inputLeft {
+    padding: 0;
+  }
+
+  .formInputs p {
+    font-size: 25px;
   }
 
   .buttonBlock {
     display: block;
     padding-right: 400px;
+    padding-bottom: 300px;
   }
 
   input[type="submit"] {

@@ -1,4 +1,4 @@
-function myFunction() {
+/*function myFunction() {
   let x = document.getElementById("myTopNav");
   if (x.className === "topNav") {
     x.className += " responsive";
@@ -6,7 +6,7 @@ function myFunction() {
     x.className = "topNav";
   }
 }
-menu.onclick = myFunction;
+menu.onclick = myFunction; */
 
 //services
 fetch("https://site-bc77b.firebaseio.com/mainServices.json")
@@ -200,10 +200,16 @@ $(function () {
   console.log(scrollPosition);
   $(window).on("scroll", function () {
     scrollPosition = $(this).scrollTop();
-    if (scrollPosition > welcomeHeight) {
+    if (scrollPosition > 0) {
       header.addClass("fixed");
     } else {
       header.removeClass("fixed");
     }
+  });
+
+  $("#navToggle").on("click", function (event) {
+    event.preventDefault();
+    $("#myTopNav").toggleClass("show");
+    $("#navToggle").toggleClass("active");
   });
 });
