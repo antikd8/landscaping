@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-image: url(img/backgroundHeader.png);
+  background-attachment: fixed;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  position: absolute;
+}
+
+header.fixed {
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.headerLogo {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-left: 12%;
+  margin-top: 10px;
+}
+
+.headerLogo img {
+  margin-bottom: -2px;
+  margin-left: -75px;
+}
+
+.company span {
+  margin-left: 15px;
+}
+
+nav {
+  margin-top: 16px;
+  padding-left: 25%;
+}
+
+.topNav a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 26px;
+}
+
+.topNav::selection {
+  background-color: #688f4e;
+  color: white;
+}
+
+.topNav a::selection {
+  background-color: #688f4e;
+  color: white;
+}
+
+.topNav .icon {
+  display: none;
+}
+
+header a {
+  display: inline-block;
+  color: #688f4e;
+  line-height: 2;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+header a:after {
+  background-color: #688f4e;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}

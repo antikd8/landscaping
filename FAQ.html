@@ -12,26 +12,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="headerLogo">
         <div class="Company">
-          <img src="img/growingSeed.png" width="40px" height="44px" /> MYCOMPANY
+          <img src="img/growingSeed.png" width="40px" height="44px" /><span
+            class="textLogo"
+          >
+            MYCOMPANY</span
+          >
         </div>
       </div>
       <nav>
-        <div class="topNav" id="myTopNav">
+        <div class="topNav" id="topNav">
           <a href="index.html">главная</a>
-          <a href="#faqtext" data-scroll="#faqtext">Галерея</a>
+          <a href="gallery.html">Галерея</a>
           <a href="#">faq</a>
           <a href="#contact" data-scroll="#contact">контакты</a>
-          <a href="#" id="menu" class="icon">&#9776;</a>
         </div>
       </nav>
+      <button class="burger" type="button" id="navToggle">
+        <span class="burger__item">Menu</span>
+      </button>
     </header>
 
     <div class="mainFaq">
       <div class="wrapper">
-        <h1>Часто задаваемые вопросы</h1>
+        <h1>ваши часто задаваемые вопросы</h1>
         <div class="faqtext" id="faqtext">
           <p>
             В данном разделе вы можете просмотреть вопросы, которые часто задают
@@ -136,13 +142,13 @@
             улучшат состояние почвы в целом для будущих работ.
           </p>
           <p>
-            Также наша технике тщательно обрабатывается каждый раз при начале
+            Также наша техника тщательно обрабатывается каждый раз при начале
             работы. Это позволяет исключить риск попадания в почву вредных
             веществ.
           </p>
         </div>
       </div>
-      <div class="contentBox active">
+      <div class="contentBox">
         <div class="question">в каком случае возможна приостановка работ?</div>
         <div class="answer5">
           <p>

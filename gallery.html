@@ -3,7 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Галерея работ</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="shortcut icon" type="image/png" href="img/growingSeed.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <div class="headerLogo">
+        <div class="company">
+          <img src="img/growingSeed.png" width="40px" height="44px" />
+          <span class="textLogo">MYCOMPANY</span>
+        </div>
+      </div>
+      <nav>
+        <div class="topNav" id="myTopNav">
+          <a href="index.html" data-scroll="#home">главная</a>
+          <a href="#services" data-scroll="#services">Услуги</a>
+          <a href="gallery.html">галерея</a>
+          <a href="FAQ.html">faq</a>
+          <a href="#testimonials" data-scroll="#testimonials">отзывы</a>
+          <a href="#contact" data-scroll="#contact">контакты</a>
+          <a href="#" id="menu" class="icon">&#9776;</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="mainWorks" id="mainWorks">
+        <div class="wrapper">
+          <h1 id="works">
+            <span class="light">взгляните на </span> наши работы
+          </h1>
+          <div class="works">
+            <div id="worksText">
+              <div class="cssload-wheel"></div>
+            </div>
+          </div>
+          <div class="workPhotos">
+            <div class="line1" id="line1">
+              <a href="#img1"><img src="img/work1.png" alt="work1" /></a>
+              <a href="#img2"><img src="img/work2.png" alt="work1" /></a>
+              <a href="#img3" class="thirdImage"
+                ><img src="img/work3.png" alt="work3"
+              /></a>
+            </div>
+            <div class="line2" id="line2">
+              <a href="#img4"><img src="img/work4.png" alt="work2" /></a>
+              <a href="#img5"><img src="img/work5.png" alt="work2" /></a>
+              <a href="#img6" class="thirdImage"
+                ><img src="img/work6.png" alt="work2"
+              /></a>
+            </div>
+            <div class="line3" id="line3">
+              <a href="#img7"><img src="img/work7.png" alt="work3" /></a>
+              <a href="#img8"><img src="img/work8.png" alt="work3" /></a>
+              <a href="#img9" class="thirdImage"
+                ><img src="img/work9.png" alt="work3"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photosWork">
+        <a href="#line2" class="work9" id="img9"
+          ><img src="img/work9.1.jpg" alt="work9.1"
+        /></a>
+        <a href="#line2" class="work8" id="img8"
+          ><img src="img/work8.1.jpg" alt="work8.1"
+        /></a>
+        <a href="#line2" class="work7" id="img7"
+          ><img src="img/work7.1.jpg" alt="work7.1"
+        /></a>
+        <a href="#line1" class="work4" id="img6"
+          ><img src="img/work6.1.jpg" alt="work6.1"
+        /></a>
+        <a href="#line1" class="work5" id="img5"
+          ><img src="img/work5.1.jpg" alt="work5.1"
+        /></a>
+        <a href="#line1" class="work4" id="img4"
+          ><img src="img/work4.1.jpg" alt="work4.1"
+        /></a>
+        <a href="#line1" class="work2" id="img2"
+          ><img src="img/work2.1.jpg" alt="work2.1"
+        /></a>
+        <a href="#line1" class="work1" id="img1"
+          ><img src="img/work1.1.jpg" alt="work1.1"
+        /></a>
+        <a href="#line1" class="work3" id="img3"
+          ><img src="img/work3.1.jpg" alt="work3.1"
+        /></a>
+      </div>
+    </main>
+  </body>
 </html>

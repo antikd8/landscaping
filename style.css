@@ -781,7 +781,7 @@ input[type="submit"] {
 form p {
   text-align: left;
 }
-
+/*
 footer {
   background: #222222;
   width: 100%;
@@ -796,8 +796,7 @@ footer {
 .social img {
   margin-top: 30px;
   padding-right: 14px;
-}
-
+} */
 .mainTestimonials .cssload-container {
   margin-top: 80px;
 }
@@ -825,65 +824,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  nav {
-    margin-left: 18%;
-  }
-}
-
-@media screen and (max-width: 1300) {
-  input {
-    width: 478px;
-  }
-
-  textarea {
-    width: 946px;
-  }
-}
-
 @media screen and (max-width: 1080px) {
-  /* .topNav a {
-    display: none;
-    background-color: #222222;
-    font-size: 20px;
-  }
-
-  .topNav a.icon {
-    display: block;
-    float: right;
-    font-size: 25px;
-    margin-top: -17px;
-    color: #fff;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  .topNav.responsive {
-    position: relative;
-    top: 50px;
-    left: -200px;
-  }
-
-  header .topNav.responsive {
-    height: 240px;
-  }
-
-  .topNav.responsive a.icon {
-    position: absolute;
-    top: -50px;
-    right: -200px;
-  }
-
-  .topNav.responsive a {
-    float: none;
-    display: block;
-    text-align: right;
-    left: 200px;
-    top: 24px;
-  } */
-
   .topNav {
     display: none;
     width: 100%;
@@ -928,7 +869,7 @@ footer {
   /* Burger */
   .burger {
     display: block;
-    margin-left: 24%;
+    margin-left: 40%;
   }
 
   .headerLogo {
@@ -1099,8 +1040,7 @@ footer {
     font-size: 16px;
   }
 
-  .mainTestimonials p,
-  .mainFeedback p {
+  .mainTestimonials p {
     font-size: 20px;
   }
 
@@ -1130,14 +1070,15 @@ footer {
     padding: 0;
   }
 
-  .formInputs p {
-    font-size: 25px;
+  form p {
+    font-size: 20px;
   }
 
+  form .message p {
+    font-size: 20px;
+  }
   .buttonBlock {
     display: block;
-    padding-right: 400px;
-    padding-bottom: 300px;
   }
 
   input[type="submit"] {

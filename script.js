@@ -194,10 +194,7 @@ $(function () {
   });
 
   let header = $("#header");
-  let mainWelcome = $("#mainWelcome");
-  let welcomeHeight = mainWelcome.height();
   let scrollPosition = $(window).scrollTop();
-  console.log(scrollPosition);
   $(window).on("scroll", function () {
     scrollPosition = $(this).scrollTop();
     if (scrollPosition > 0) {
@@ -207,9 +204,8 @@ $(function () {
     }
   });
 
-  $("#navToggle").on("click", function (event) {
-    event.preventDefault();
-    $("#myTopNav").toggleClass("show");
+  $("#navToggle").on("click", function () {
+    $("#topNav").toggleClass("show");
     $("#navToggle").toggleClass("active");
   });
 });
