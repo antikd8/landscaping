@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Галерея работ</title>
     <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
     <link rel="shortcut icon" type="image/png" href="img/growingSeed.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
@@ -22,80 +24,64 @@
       <nav>
         <div class="topNav" id="myTopNav">
           <a href="index.html" data-scroll="#home">главная</a>
-          <a href="#services" data-scroll="#services">Услуги</a>
-          <a href="gallery.html">галерея</a>
+          <a href="#nameOfTask">галерея</a>
           <a href="FAQ.html">faq</a>
-          <a href="#testimonials" data-scroll="#testimonials">отзывы</a>
           <a href="#contact" data-scroll="#contact">контакты</a>
           <a href="#" id="menu" class="icon">&#9776;</a>
         </div>
       </nav>
     </header>
     <main>
-      <div class="mainWorks" id="mainWorks">
+      <div class="mainWorks">
         <div class="wrapper">
-          <h1 id="works">
-            <span class="light">взгляните на </span> наши работы
-          </h1>
-          <div class="works">
-            <div id="worksText">
-              <div class="cssload-wheel"></div>
-            </div>
+          <h1>Галерея наших работ</h1>
+          <div id="galleryText" class="galleryText">
+            <p>
+              В этом разделе вы можете ознакомиться с некоторыми нашими
+              работами. Мы представляем вам пожелания заказчика, которые он
+              оставлял, для реставрации. Затем вы можете лицезреть фотоснимки
+              завершенной работы, а также отзыв клиента о данной работе!
+            </p>
           </div>
-          <div class="workPhotos">
-            <div class="line1" id="line1">
-              <a href="#img1"><img src="img/work1.png" alt="work1" /></a>
-              <a href="#img2"><img src="img/work2.png" alt="work1" /></a>
-              <a href="#img3" class="thirdImage"
-                ><img src="img/work3.png" alt="work3"
-              /></a>
-            </div>
-            <div class="line2" id="line2">
-              <a href="#img4"><img src="img/work4.png" alt="work2" /></a>
-              <a href="#img5"><img src="img/work5.png" alt="work2" /></a>
-              <a href="#img6" class="thirdImage"
-                ><img src="img/work6.png" alt="work2"
-              /></a>
-            </div>
-            <div class="line3" id="line3">
-              <a href="#img7"><img src="img/work7.png" alt="work3" /></a>
-              <a href="#img8"><img src="img/work8.png" alt="work3" /></a>
-              <a href="#img9" class="thirdImage"
-                ><img src="img/work9.png" alt="work3"
-              /></a>
-            </div>
+          <h2 class="nameOfTask" id="nameOfTask">Осенний сад</h2>
+          <div class="task">
+            <p>
+              Здравствуйте, хотел бы воспользоваться услугами вашей компании по
+              редизайну моего сада. Задумка такая: хочется выполнить всё в неком
+              осеннем стиле, например на участке имеется несколько деревьев,
+              правда в печальном состоянии, которые в своё время осенью сверкали
+              своими жёлтыми и оранжевыми красками. Было бы неплохо, если бы вы
+              проявили к ним должный уход и как-нибудь оживили. Также хотелось
+              бы, чтобы вы высадили множество декоративных и натуральных кустов,
+              чтобы они контрастировали с оранжево-жёлтыми красками, часть из
+              которых была бы в розовых цветах. Также хочется поменять старую
+              плитку на заднем дворе на эстетически красивую брусчатку, ибо
+              места на заднем дворе по правде очень много. Ещё хочется, чтобы вы
+              продумали систему дневного и ночного освещения территории, а также
+              добавили в экстерьер величественных камней и возвели подходящей
+              всему описанному выше по стилю невысокий забор. Буду очень
+              признателен, если вы возьметесь выполнять мой заказ)
+            </p>
+          </div>
+          <div class="slider_main">
+            <div class="slide1"><img src="img/project1.jpeg" /></div>
+            <div class="slide2"><img src="img/project2.jpeg" /></div>
+            <div class="slide3"><img src="img/project3.jpeg" /></div>
+            <div class="slide4"><img src="img/project4.jpeg" /></div>
+            <div class="slide6"><img src="img/project6.jpeg" /></div>
+          </div>
+          <div class="slider_child">
+            <div class="slide1"><img src="img/project1.jpeg" /></div>
+            <div class="slide2"><img src="img/project2.jpeg" /></div>
+            <div class="slide3"><img src="img/project3.jpeg" /></div>
+            <div class="slide4"><img src="img/project4.jpeg" /></div>
+            <div class="slide6"><img src="img/project6.jpeg" /></div>
           </div>
         </div>
       </div>
-      <div class="photosWork">
-        <a href="#line2" class="work9" id="img9"
-          ><img src="img/work9.1.jpg" alt="work9.1"
-        /></a>
-        <a href="#line2" class="work8" id="img8"
-          ><img src="img/work8.1.jpg" alt="work8.1"
-        /></a>
-        <a href="#line2" class="work7" id="img7"
-          ><img src="img/work7.1.jpg" alt="work7.1"
-        /></a>
-        <a href="#line1" class="work4" id="img6"
-          ><img src="img/work6.1.jpg" alt="work6.1"
-        /></a>
-        <a href="#line1" class="work5" id="img5"
-          ><img src="img/work5.1.jpg" alt="work5.1"
-        /></a>
-        <a href="#line1" class="work4" id="img4"
-          ><img src="img/work4.1.jpg" alt="work4.1"
-        /></a>
-        <a href="#line1" class="work2" id="img2"
-          ><img src="img/work2.1.jpg" alt="work2.1"
-        /></a>
-        <a href="#line1" class="work1" id="img1"
-          ><img src="img/work1.1.jpg" alt="work1.1"
-        /></a>
-        <a href="#line1" class="work3" id="img3"
-          ><img src="img/work3.1.jpg" alt="work3.1"
-        /></a>
-      </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="gallery.js"></script>
+    <script src="slick/slick.min.js"></script>
   </body>
 </html>

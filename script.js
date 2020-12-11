@@ -1,13 +1,3 @@
-/*function myFunction() {
-  let x = document.getElementById("myTopNav");
-  if (x.className === "topNav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topNav";
-  }
-}
-menu.onclick = myFunction; */
-
 //services
 fetch("https://site-bc77b.firebaseio.com/mainServices.json")
   .then(function (jsonResponse) {

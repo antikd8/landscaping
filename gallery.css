@@ -48,7 +48,7 @@ li {
 
 nav {
   margin-top: 16px;
-  padding-left: 25%;
+  padding-left: 40%;
 }
 
 .topNav a {
@@ -98,4 +98,74 @@ header a:after {
 a:hover:after,
 a:focus:after {
   width: 100%;
+}
+
+.wrapper {
+  width: 74%;
+  margin: 0 auto;
+}
+
+.mainWorks {
+  padding-top: 170px;
+  background-color: #0f0f0f;
+}
+
+.mainWorks h1 {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: white;
+  display: inline-block;
+  border-bottom: 4px solid #688f4e;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-left: 26%;
+}
+
+.mainWorks h2 {
+  font-size: 35px;
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #688f4e;
+  padding-bottom: 30px;
+  text-align: center;
+  margin-left: 38%;
+  margin-top: 160px;
+}
+
+.mainWorks p {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mainWorks img {
+  width: 100%;
+}
+
+.mainWorks .slider_main {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.mainWorks .slider_main img {
+  height: 735px;
+}
+
+.mainWorks .slider_child .slide3 img {
+  height: 208px;
+}
+
+.mainWorks .slider_child div {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.slick-dots li button:before {
+  font-size: 26px !important;
+  line-height: 40px !important;
+  content: "•" !important; /* <-- Вот этот символ */
+  color: #688f4e !important;
 }
