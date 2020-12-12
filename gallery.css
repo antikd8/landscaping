@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-image: url(../img/backgrounds/backgroundHeader.png);
+  background-image: url(img/backgrounds/backgroundHeader.png);
   background-attachment: fixed;
   display: flex;
   width: 100%;
@@ -274,7 +274,7 @@ a:focus:after {
 }
 
 .thirdTask h2 {
-  margin-left: 30%;
+  margin-left: 32%;
 }
 
 .thirdTask {
