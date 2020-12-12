@@ -21,3 +21,21 @@ $(function () {
     focusOnSelect: true,
   });
 });
+fetch("https://site-bc77b.firebaseio.com/mainGallery.json")
+  .then(function (jsonResponse) {
+    return jsonResponse.json();
+  })
+  .then(function (mainTeamResponse) {});
+//worker1
+fetch("https://site-bc77b.firebaseio.com/mainGallery/task1.json")
+  .then(function (jsonResponse) {
+    return jsonResponse.json();
+  })
+  .then(function (mainTeamResponse) {
+    const review1 = mainTeamResponse.reviewText;
+    const task1 = mainTeamResponse.taskText;
+    const authorName1 = mainTeamResponse.authorName;
+    document.getElementById("authorName1").textContent = authorName1;
+    document.getElementById("review1").textContent = review1;
+    document.getElementById("task1").textContent = task1;
+  });

@@ -105,12 +105,12 @@ a:focus:after {
   margin: 0 auto;
 }
 
-.mainWorks {
+.mainGallery {
   padding-top: 170px;
   background-color: #0f0f0f;
 }
 
-.mainWorks h1 {
+.mainGallery h1 {
   text-transform: uppercase;
   font-size: 45px;
   color: white;
@@ -121,7 +121,7 @@ a:focus:after {
   margin-left: 26%;
 }
 
-.mainWorks h2 {
+.mainGallery h2 {
   font-size: 35px;
   color: white;
   display: inline-block;
@@ -133,7 +133,9 @@ a:focus:after {
   margin-top: 160px;
 }
 
-.mainWorks p {
+#review1,
+#task1,
+#authorName1 {
   font-size: 20px;
   color: white;
   font-style: italic;
@@ -142,24 +144,37 @@ a:focus:after {
   margin-top: 60px;
 }
 
-.mainWorks img {
+#task1 {
+  padding-bottom: 50px;
+}
+
+.mainGallery p {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mainGallery img {
   width: 100%;
 }
 
-.mainWorks .slider_main {
+.mainGallery .slider_main {
   padding-top: 70px;
   padding-bottom: 50px;
 }
 
-.mainWorks .slider_main img {
+.mainGallery .slider_main img {
   height: 735px;
 }
 
-.mainWorks .slider_child .slide3 img {
+.mainGallery .slider_child .slide3 img {
   height: 208px;
 }
 
-.mainWorks .slider_child div {
+.mainGallery .slider_child div {
   margin-right: 30px;
   margin-left: 10px;
 }
@@ -168,4 +183,30 @@ a:focus:after {
   line-height: 40px !important;
   content: "•" !important; /* <-- Вот этот символ */
   color: #688f4e !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -45px !important;
+  display: block;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.upperDots {
+  padding-top: 70px;
+}
+
+.reviewDot {
+  color: white;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+#right {
+  position: absolute;
+  text-align: right;
+  margin-left: 72%;
 }
