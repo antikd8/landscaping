@@ -10,17 +10,12 @@ $(function () {
     event.preventDefault();
     let blockID = $(this).data("scroll");
     let blockOffset = $(blockID).offset().top;
-    console.log(blockOffset);
 
     $("html,body").animate(
       {
         scrollTop: blockOffset,
       },
-      function () {
-        if (blockOffset > 3000 && blockOffset < 5500) return 7000;
-        if (blockOffset > 5500 && blockOffset < 6700) return 8000;
-        if (blockOffset > 6700) return 1000;
-      }
+      1000
     );
   });
 

@@ -10,7 +10,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-image: url(img/faq_background.jpg);
+  background-image: url(../img/backgrounds/faq_background.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background-image: url(img/backgroundHeader.png);
+  background-image: url(../img/backgrounds/backgroundHeader.png);
   background-attachment: fixed;
   display: flex;
   height: 90px;
@@ -428,7 +428,7 @@ footer {
 
 @media screen and (max-width: 1150px) {
   body {
-    background-image: url(img/faq_background_modile.png);
+    background-image: url(../img/backgrounds/faq_background_modile.png);
   }
 
   .headerLogo {

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-image: url(img/backgroundHeader.png);
+  background-image: url(../img/backgrounds/backgroundHeader.png);
   background-attachment: fixed;
   display: flex;
   width: 100%;
@@ -156,7 +156,7 @@ main {
 }
 
 .mainWelcome {
-  background-image: url(img/background.png);
+  background-image: url(../img/backgrounds/background.png);
   background-attachment: fixed;
   text-align: center;
   padding-bottom: 430px;
