@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+*::selection {
+  background-color: #688f4e;
+  color: white;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -59,16 +64,6 @@ nav {
   font-weight: bold;
   text-align: center;
   padding: 12px 26px;
-}
-
-.topNav::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.topNav a::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .topNav .icon {
@@ -194,21 +189,6 @@ main {
   margin: 0 auto;
 }
 
-.mainWelcome p::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainWelcome h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainWelcome span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .mainAbout {
   display: grid;
   grid-template-columns: auto auto;
@@ -229,36 +209,16 @@ main {
   text-transform: uppercase;
 }
 
-.mainRight h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .mainRight p {
   font-size: 18px;
   color: #6c6c6c;
   margin-top: 32px;
 }
 
-.mainRight p::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainRight span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .mainRight ul {
   font-size: 18px;
   color: #5a5a5a;
   margin-top: 50px;
-}
-
-.mainRight li::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .mainRight li {
@@ -298,27 +258,6 @@ main {
   text-transform: uppercase;
 }
 
-.mainTeam h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainTeam span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.name::selection {
-  background-color: #688f4e;
-  color: white;
-  font-size: 20px;
-}
-
-.position::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .photo {
   margin: 20px auto;
 }
@@ -344,17 +283,8 @@ main {
   font-size: 14px;
 }
 
-.about::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .card {
   margin: 0 20px;
-}
-
-.photo::selection {
-  background-color: #688f4e;
 }
 
 .mainServices {
@@ -378,16 +308,6 @@ main {
   text-transform: uppercase;
 }
 
-.mainServices h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainServices span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 #servicesText {
   margin-top: 56px;
   color: #6c6c6c;
@@ -396,26 +316,10 @@ main {
   text-align: center;
   font-style: italic;
 }
-
-#servicesText::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .servicesCard h4 {
   text-transform: uppercase;
   padding-top: 30px;
   font-size: 25px;
-}
-
-.servicesCard h4::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.servicesCard p::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .servicesCard p {
@@ -427,10 +331,6 @@ main {
 .mainServices img {
   width: 125px;
   height: 125px;
-}
-
-.mainServices img::selection {
-  background-color: #688f4e;
 }
 
 .mainClients {
@@ -449,16 +349,6 @@ main {
   text-transform: uppercase;
 }
 
-.mainClients h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainClients span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .clients {
   text-align: center;
   margin-top: 110px;
@@ -468,10 +358,6 @@ main {
 
 .mainClients img {
   margin-left: 30px;
-}
-
-.mainClients img::selection {
-  background-color: #688f4e;
 }
 
 .mainTestimonials {
@@ -487,31 +373,6 @@ main {
   border-bottom: 3px solid #688f4e;
   font-size: 44px;
   display: inline-block;
-}
-
-.mainTestimonials h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainTestimonials span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.Testimonial::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-#testimonialsText::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.author p::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .Testimonial {
@@ -544,16 +405,6 @@ main {
   text-transform: uppercase;
 }
 
-.mainWorks h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainWorks span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 #worksText {
   margin-top: 60px;
   font-size: 16px;
@@ -565,11 +416,6 @@ main {
 .workPhotos img {
   width: 263px;
   height: 243px;
-}
-
-#worksText::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .light {
@@ -596,10 +442,6 @@ main {
   transition: 0.3s;
   box-shadow: 10px 15px #688f4e;
   transform: scale(1.05);
-}
-
-.mainWorks img::selection {
-  background-color: #688f4e;
 }
 
 .work3,
@@ -678,27 +520,12 @@ main {
   padding-top: 100px;
 }
 
-.mainFeedback h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainFeedback span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 #contactsText {
   font-size: 16px;
   color: #9a9a9a;
   margin-top: 60px;
   padding-bottom: 100px;
   font-style: italic;
-}
-
-#contactsText::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .contactWrapper {
@@ -725,16 +552,6 @@ input {
   padding-right: 30px;
 }
 
-.formInputs p::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.formInputs span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 .red {
   color: red;
 }
@@ -742,11 +559,6 @@ input {
 textarea {
   width: 100%;
   height: 150px;
-}
-
-.message p::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 input,
@@ -870,6 +682,10 @@ footer {
   .burger {
     display: block;
     margin-left: 40%;
+  }
+
+  .burger:focus {
+    outline: none;
   }
 
   .headerLogo {

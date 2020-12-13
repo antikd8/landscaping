@@ -19,6 +19,16 @@ $(function () {
     asNavFor: ".slider_main",
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".slider_main_2").slick({
@@ -41,6 +51,16 @@ $(function () {
     asNavFor: ".slider_main_2",
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
   $(".slider_main_3").slick({
     infinite: true,
@@ -62,6 +82,16 @@ $(function () {
     asNavFor: ".slider_main_3",
     centerMode: true,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();

@@ -3,8 +3,14 @@
   padding: 0;
 }
 
+*::selection {
+  background-color: #688f4e;
+  color: white;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  min-width: 100%;
 }
 
 header {
@@ -15,6 +21,7 @@ header {
   height: 90px;
   position: absolute;
   z-index: 10;
+  min-width: 980px;
 }
 
 header.fixed {
@@ -59,16 +66,6 @@ nav {
   font-weight: bold;
   text-align: center;
   padding: 12px 26px;
-}
-
-.topNav::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.topNav a::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .topNav .icon {
@@ -148,8 +145,9 @@ a:focus:after {
 }
 
 .wrapper {
-  width: 74%;
+  width: 80%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .mainGallery {
@@ -165,7 +163,7 @@ a:focus:after {
   border-bottom: 4px solid #688f4e;
   padding-bottom: 30px;
   text-align: center;
-  margin-left: 26%;
+  margin-left: 28%;
 }
 
 .mainGallery h2 {
@@ -176,8 +174,15 @@ a:focus:after {
   border-bottom: 4px solid #688f4e;
   padding-bottom: 30px;
   text-align: center;
-  margin-left: 38%;
-  margin-top: 160px;
+  padding-top: 160px;
+}
+
+.mainGallery .firstTask #nameOfTask {
+  margin-left: 40%;
+}
+
+.mainGallery .secondTask #nameOfTask {
+  margin-left: 32%;
 }
 
 #review1,
@@ -221,7 +226,7 @@ a:focus:after {
 .mainGallery .slider_main img,
 .mainGallery .slider_main_2 img,
 .mainGallery .slider_main_3 img {
-  height: 735px;
+  height: 100%;
 }
 
 .mainGallery .slider_child div,
@@ -229,6 +234,12 @@ a:focus:after {
 .mainGallery .slider_child_3 div {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.slider_child div:focus,
+.slider_child2 div:focus,
+.slider_child3 div:focus {
+  outline: none;
 }
 
 .slick-dots li button:before {
@@ -256,7 +267,7 @@ a:focus:after {
 #right {
   position: absolute;
   text-align: right;
-  margin-left: 72%;
+  margin-left: 78%;
 }
 
 .secondTask {
@@ -270,11 +281,10 @@ a:focus:after {
 
 .secondTask h2 {
   color: black;
-  margin-left: 30%;
 }
 
 .thirdTask h2 {
-  margin-left: 32%;
+  margin-left: 39.5%;
 }
 
 .thirdTask {
@@ -332,27 +342,12 @@ a:focus:after {
   margin: 0 auto;
 }
 
-.mainFeedback h1::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
-.mainFeedback span::selection {
-  background-color: #688f4e;
-  color: white;
-}
-
 #contactsText {
   margin-top: 60px;
   padding-bottom: 100px;
   font-style: italic;
   color: black;
   font-size: 18px;
-}
-
-#contactsText::selection {
-  background-color: #688f4e;
-  color: white;
 }
 
 .contactWrapper {
@@ -438,7 +433,7 @@ footer {
   padding-right: 14px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1080px) {
   .headerLogo {
     padding-top: 10px;
   }
@@ -497,6 +492,98 @@ footer {
   /* Burger */
   .burger {
     display: block;
-    margin-left: 0%;
+    margin-left: 25%;
+  }
+
+  .burger:focus {
+    outline: none;
+  }
+
+  .firstTask {
+    width: 100%;
+  }
+
+  .mainGallery h1 {
+    margin-left: 16%;
+  }
+
+  #task1,
+  #review1 {
+    font-size: 13px;
+  }
+
+  .mainGallery #task2,
+  .mainGallery #review2 {
+    font-size: 13px;
+  }
+
+  .mainGallery #authorName2 {
+    font-size: 20px;
+  }
+  #right.reviewDot {
+    margin-left: 78%;
+  }
+  .mainGallery .firstTask #nameOfTask {
+    margin-left: 32.5%;
+  }
+
+  .mainGallery .secondTask #nameOfTask {
+    margin-left: 22%;
+  }
+
+  .slider_child div:focus,
+  .slider_child_2 div:focus,
+  .slider_child_3 div:focus {
+    outline: none;
+  }
+
+  .thirdTask h2 {
+    margin-left: 33%;
+  }
+
+  #task3,
+  #review3 {
+    font-size: 13px;
+  }
+
+  #contactsText {
+    font-size: 25px;
+  }
+
+  .mainFeedback h1 {
+    font-size: 44px;
+  }
+
+  .formInputs {
+    flex-direction: column;
+  }
+
+  textarea {
+    float: left;
+    width: 100%;
+  }
+
+  input {
+    float: left;
+    width: 100%;
+  }
+
+  .inputLeft {
+    padding: 0;
+  }
+
+  form p {
+    font-size: 20px;
+  }
+
+  form .message p {
+    font-size: 20px;
+  }
+  .buttonBlock {
+    display: block;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
   }
 }
