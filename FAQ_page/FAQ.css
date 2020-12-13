@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: #688f4e;
+  color: white;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(../img/backgrounds/faq_background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  width: 74%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../img/backgrounds/backgroundHeader.png);
+  background-attachment: fixed;
+  display: flex;
+  height: 90px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+header.fixed {
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.headerLogo {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-left: 12%;
+  margin-top: 10px;
+}
+
+.headerLogo img {
+  margin-bottom: -2px;
+  margin-left: -75px;
+}
+
+.headerLogo span {
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 44px;
+  border-bottom: 4px solid #688f4e;
+  display: inline-block;
+  padding-bottom: 30px;
+  padding-top: 120px;
+  text-transform: uppercase;
+  margin-left: 145px;
+}
+
+nav {
+  margin-top: 16px;
+  padding-left: 40%;
+}
+
+.topNav a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 26px;
+}
+
+header a {
+  display: inline-block;
+  color: #688f4e;
+  line-height: 2;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+header a:after {
+  background-color: #688f4e;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%;
+}
+
+.burger {
+  display: none;
+  padding: 9px 2px;
+
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger__item {
+  display: block;
+  width: 28px;
+  height: 3px;
+  transition: 0.4s;
+
+  background-color: #fff;
+
+  font-size: 0;
+  color: transparent;
+
+  position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+  content: "";
+  height: 100%;
+  transition: 0.4s;
+
+  background-color: #fff;
+
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.burger__item:before {
+  width: 30px;
+  top: -8px;
+}
+
+.burger__item:after {
+  width: 26px;
+  bottom: -8px;
+}
+
+.to_top.fixed {
+  display: flex;
+}
+
+.to_top {
+  display: none;
+}
+
+.to_top img {
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+  width: 60px;
+  height: 50px;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+.to_top img:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+  bottom: 80px;
+  cursor: pointer;
+}
+
+.accordion {
+  padding: 40px 220px;
+}
+
+.contentBox {
+  padding: 30px;
+}
+
+.question {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  background: #688f4e;
+  position: relative;
+  cursor: pointer;
+}
+
+.question::before {
+  content: "+";
+  position: absolute;
+  font-weight: 700;
+  right: 3%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.answer1,
+.answer2,
+.answer3,
+.answer4,
+.answer5 {
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  font-size: 20px;
+  transition: 0.16s;
+  background-color: rgba(104, 143, 78, 0.3);
+  padding: 0px 30px;
+  color: #2b2b2b;
+  /*rgba(104, 143, 78, 1)*/
+}
+
+.answer1 p,
+.answer2 p,
+.answer3 p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.answer4 p,
+.answer5 p {
+  font-weight: bolder;
+}
+
+.contentBox.active .answer1 {
+  height: 460px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+.contentBox.active .answer2 {
+  height: 370px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+.contentBox.active .answer3 {
+  height: 340px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+.contentBox.active .answer4 {
+  height: 170px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+.contentBox.active .answer5 {
+  height: 190px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+
+.contentBox.active .question::before {
+  position: absolute;
+  content: "-";
+  font-size: 60px;
+  font-weight: 300;
+  transform: translateY(-47px);
+}
+
+.faqtext {
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  width: 82%;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.mainFaq h1 {
+  text-align: center;
+}
+
+ul {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+li {
+  list-style-type: disc;
+  padding-top: 5px;
+}
+
+.conclusionAnswer3 {
+  padding-top: 25px;
+  font-weight: bolder;
+}
+
+.mainFeedback {
+  text-align: center;
+  color: white;
+}
+
+#contact {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: black;
+  display: inline-block;
+  border-bottom: 4px solid #688f4e;
+  padding-bottom: 30px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+#contactsText {
+  margin-top: 60px;
+  padding-bottom: 100px;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
+}
+
+.contactWrapper {
+  width: 52%;
+  margin: 0 auto;
+  color: #2b2b2b;
+}
+
+.formInputs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.inputLeft {
+  padding-right: 30px;
+}
+
+.red {
+  color: red;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+}
+
+input,
+textarea {
+  border: 1px solid #999999;
+}
+
+.buttonBlock {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  width: 165px;
+  height: 40px;
+  background: #688f4e;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #c8dcb9;
+  border: 3px solid #688f4e;
+  color: #688f4e;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+form p {
+  text-align: left;
+  font-size: 18px;
+}
+
+footer {
+  background: #222222;
+  width: 100%;
+  display: flex;
+}
+
+.social {
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.social img {
+  margin-top: 30px;
+  padding-right: 14px;
+}
+
+.cssload-container {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.cssload-wheel {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 5px solid #688f4e;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: cssload-spin 1325ms infinite linear;
+}
+
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transition: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    background-image: url(../img/backgrounds/faq_background_modile.png);
+  }
+
+  .headerLogo {
+    padding-top: 10px;
+  }
+
+  .company {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company span {
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+  .topNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+
+    background-color: #222222;
+    text-align: right;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  .topNav.show {
+    display: flex;
+    width: 30%;
+  }
+
+  .topNav.show a {
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .burger.active .burger__item {
+    transform: rotate(45deg);
+    top: -0px;
+    width: 30px;
+    transition: 0.4s;
+  }
+
+  .burger.active .burger__item::before {
+    transform: rotate(90deg);
+    width: 30px;
+    top: -0px;
+    transition: 0.4s;
+  }
+
+  .burger.active .burger__item::after {
+    display: none;
+  }
+
+  /* Burger */
+  .burger {
+    display: block;
+    margin-left: 25%;
+  }
+
+  .burger:focus {
+    outline: none;
+  }
+
+  .mainFaq h1 {
+    font-size: 45px;
+    padding-top: 170px;
+    margin-left: 5%;
+  }
+
+  #faqtext {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contentBox {
+    width: 100%;
+    margin-left: -25px;
+  }
+
+  .conclusionAnswer3 {
+    font-size: 25px;
+  }
+
+  .contentBox p {
+    font-size: 30px;
+  }
+
+  .contentBox li {
+    font-size: 25px;
+  }
+
+  .contentBox.active .answer1 {
+    height: 1190px;
+  }
+
+  .contentBox.active .answer2 {
+    height: 1000px;
+  }
+  .contentBox.active .answer3 {
+    height: 780px;
+  }
+  .contentBox.active .answer4 {
+    height: 600px;
+  }
+  .contentBox.active .answer5 {
+    height: 850px;
+  }
+
+  .mainFeedback #contact {
+    font-size: 45px;
+  }
+
+  #contactsText {
+    font-size: 25px;
+  }
+
+  form p {
+    font-size: 20px;
+  }
+  form .message p {
+    font-size: 20px;
+  }
+}
